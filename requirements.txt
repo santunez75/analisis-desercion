@@ -1,0 +1,14 @@
+# Versiones fijadas para que el analisis sea reproducible.
+pandas==3.0.5
+numpy==2.5.3
+scipy==1.18.1
+statsmodels==0.15.0
+pyarrow==25.0.1
+
+# --- Visualizacion ---------------------------------------------------------
+matplotlib==3.11.1
+seaborn==0.13.2
+
+# --- Entorno de notebooks --------------------------------------------------
+jupyterlab==4.6.3
+ipykernel==7.3.0

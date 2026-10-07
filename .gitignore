@@ -1,0 +1,31 @@
+# --- Entorno ---------------------------------------------------------------
+# El entorno virtual vive dentro de la carpeta del proyecto, pero no se
+# versiona: no es portable entre equipos.
+.venv/
+venv/
+env/
+
+# --- Python ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# --- Datos de origen -------------------------------------------------------
+# Las bases completas del SIES (149 MB de matricula y 39 MB de titulados)
+# superan el limite de 100 MB por archivo de GitHub. El conjunto analitico ya
+# agregado si se versiona: pesa 3 MB y hace el repositorio autosuficiente.
+datos/raw/
+datos/interim/
+
+# --- Sistema operativo y editores ------------------------------------------
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# --- Documentos temporales -------------------------------------------------
+~$*.docx
+~$*.xlsx
