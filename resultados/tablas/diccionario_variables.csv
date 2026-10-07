@@ -1,0 +1,26 @@
+﻿variable,tipo,descripcion,valores_distintos
+codigo_carrera,Identificador,Clave unica del programa,9678
+pct_municipal,Cuantitativa continua,Proporcion proveniente de ensenanza municipal,9678
+pct_pagado,Cuantitativa continua,Proporcion proveniente de particular pagado,8592
+pct_tp,Cuantitativa continua,Proporcion proveniente de ensenanza tecnico-profesional,9665
+pct_mujeres,Cuantitativa continua,Proporcion de mujeres en la matricula,9418
+edad_promedio,Cuantitativa continua,"Edad media de la matricula, en anios",9641
+inst_acreditada,Cuantitativa continua,Fraccion de la matricula en institucion acreditada,1195
+carrera_acreditada,Cuantitativa continua,Fraccion de la matricula en carrera acreditada,4720
+matricula_total,Cuantitativa continua,Matricula media del programa,9641
+ingreso,Cuantitativa discreta,Ingreso acumulado a primer anio,1346
+titulados,Cuantitativa discreta,Titulaciones acumuladas,1006
+nombre_institucion,Cualitativa nominal,Institucion,168
+codigo_de_institucion,Identificador,Clave de la institucion,168
+clasificacion_institucion_nivel_3,Cualitativa nominal,Tipo de institucion,6
+region,Cualitativa nominal,Region de la sede,16
+area_del_conocimiento,Cualitativa nominal,Area del conocimiento,10
+carrera_clasificacion_nivel_1,Cualitativa nominal,Tipo de carrera,3
+modalidad,Cualitativa nominal,"Presencial, semipresencial o no presencial",3
+jornada,Cualitativa nominal,"Diurna, vespertina u otra",3
+duracion_estudio_carrera,Cuantitativa discreta,"Duracion formal, en semestres",13
+inst_cerrada,Cualitativa dicotomica,1 si la institucion dejo de operar,2
+abandono,Cuantitativa continua,Proporcion de la cohorte que no se titula (respuesta),7562
+metropolitana,Cualitativa dicotomica,1 si la sede esta en la Region Metropolitana,2
+log_matricula,Cuantitativa continua,"Logaritmo de la matricula, para simetrizar la escala",9641
+duracion_anios,Cuantitativa discreta,"Duracion formal, en anios",13

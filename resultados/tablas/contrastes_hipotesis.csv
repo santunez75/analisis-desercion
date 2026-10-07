@@ -1,0 +1,4 @@
+﻿Contraste,Hipotesis nula,Estadistico,gl,p,Decision,Tamanio del efecto,Magnitud
+t de Welch,Igual abandono segun acreditacion,t = 20.61,902,1.1674274051093566e-77,Se rechaza,d = 0.80,Grande
+ANOVA,Igual abandono entre las 10 areas,F = 44.30,"9, 9668",1.2409628678675046e-78,Se rechaza,eta2 = 0.040,Pequenio
+Chi-cuadrado,Independencia tipo de institucion / abandono,chi2 = 102.5,5,1.5660576459532766e-20,Se rechaza,V = 0.103,Debil

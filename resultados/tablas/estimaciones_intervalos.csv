@@ -1,0 +1,4 @@
+﻿Parametro,Tipo,Estimacion,IC inferior,IC superior,Metodo
+Abandono esperado del sistema,Media,0.5182883946343237,0.5138274430450138,0.5227493462236337,t de Student
+Programas con abandono > 50 %,Proporcion,0.5493903699111387,0.5394599276764928,0.559281618966892,Wilson
+Diferencia por acreditacion,Diferencia de medias,0.1756805228107821,0.1589531063893126,0.19240793923225163,Welch
