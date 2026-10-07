@@ -5,8 +5,24 @@ Inteligencia Artificial, Universidad Andrés Bello.
 
 **Autor:** Sebastian Antunez Noguera
 
-> Estructura inicial. El contenido se desarrollará según la rúbrica de la
-> asignatura.
+## Entrega
+
+**Sumativa 1 — Informe técnico de avance.** Aplica estadística descriptiva,
+estimación por intervalos y contraste de hipótesis sobre 9.678 programas de
+educación superior, en torno a una pregunta de decisión: dónde concentrar un
+presupuesto limitado de retención.
+
+| Entregable | Archivo |
+|---|---|
+| Informe técnico (6 páginas) | `informe/Sumativa1_Informe_Sebastian_Antunez.pdf` |
+| Cuaderno de análisis | `notebooks/Sumativa1_Analisis_Desercion.ipynb` |
+| Figuras y tablas generadas | `resultados/` |
+
+Hallazgo central: los tres contrastes rechazan la hipótesis nula con valores p
+entre 10⁻²⁰ y 10⁻⁷⁸, pero sus tamaños del efecto van de grande (d = 0,80 para
+la acreditación institucional) a despreciable (η² = 0,040 para el área del
+conocimiento). Con casi diez mil observaciones el valor p deja de discriminar,
+de modo que solo uno de los tres criterios sirve para focalizar.
 
 ## Datos
 
@@ -58,10 +74,14 @@ jupyter lab
 analisis-desercion/
 ├── datos/
 │   └── base_programas.csv   Conjunto analítico, una fila por programa
-├── notebooks/               Análisis por fases
+├── notebooks/
+│   └── Sumativa1_Analisis_Desercion.ipynb   Cuaderno de la Sumativa 1
+├── informe/
+│   └── Sumativa1_Informe_...pdf/.docx       Informe técnico de avance
 ├── resultados/
-│   ├── figuras/             Gráficos generados
-│   └── tablas/              Tablas de resultados
+│   ├── figuras/             Cuatro figuras del informe
+│   └── tablas/              Diccionario de variables, descriptivos,
+│                            estimaciones y contrastes
 ├── requirements.txt         Dependencias con versiones fijadas
 └── README.md
 ```
