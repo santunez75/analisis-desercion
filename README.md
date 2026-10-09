@@ -39,6 +39,22 @@ Esa agregación impone el alcance del trabajo. Las conclusiones se refieren a
 programas y no a personas, y describen **factores asociados** al abandono, no
 sus causas: no hay grupo de control ni seguimiento individual.
 
+### Cómo se construyó
+
+El cruce entre ambas bases no es por el mismo año: a una cohorte que ingresa en
+el año *y* le corresponden los titulados de *y + L*, siendo *L* la duración
+formal de la carrera. De 280.160 filas de matrícula y 234.074 de titulados se
+llega a 151.645 pares programa-año de egreso, que al colapsarse por programa
+—promediando las variables explicativas con el ingreso de cada año como peso—
+dan los 9.678 programas de la base analítica.
+
+Los cuatro scripts que producen `base_programas.csv` y
+`diagnostico_extremos.csv` están en [`datos/origen/`](datos/origen/), junto con
+una [descripción paso a paso](datos/origen/README.md) del cruce, los filtros
+aplicados y lo que esa construcción implica para interpretar los resultados.
+No forman parte del flujo de este repositorio: operan sobre las bases completas
+del SIES, que no se versionan por tamaño.
+
 | Fuente | Cobertura | Origen |
 |---|---|---|
 | Matrícula en educación superior | 2007–2026 | https://datosabiertos.mineduc.cl/ |
@@ -73,7 +89,9 @@ jupyter lab
 ```
 analisis-desercion/
 ├── datos/
-│   └── base_programas.csv   Conjunto analítico, una fila por programa
+│   ├── base_programas.csv   Conjunto analítico, una fila por programa
+│   ├── diagnostico_extremos.csv  Auditoría de los valores 0 y 1
+│   └── origen/              Scripts y documentación de cómo se construyó
 ├── notebooks/
 │   └── Sumativa1_Analisis_Desercion.ipynb   Cuaderno de la Sumativa 1
 ├── informe/
