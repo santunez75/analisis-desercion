@@ -1,0 +1,10 @@
+﻿Control,Casos,Resultado
+Filas completamente duplicadas,0,correcto
+Programas con codigo repetido,0,correcto
+Valores faltantes,0,correcto
+"Proporciones fuera de [0, 1]",0,correcto
+"Abandono fuera de [0, 1]",0,correcto
+Edad media fuera de 16 a 60 anios,0,correcto
+Programas bajo el umbral declarado de 100 de ingreso,0,correcto
+Duracion fuera de 1 a 10 anios,1,revisar
+Titulados por sobre el ingreso de la cohorte,299,revisar
