@@ -3,7 +3,8 @@
 Trabajo del curso **Estadística Computacional** — Magíster en Ciencia de Datos e
 Inteligencia Artificial, Universidad Andrés Bello.
 
-**Autor:** Sebastian Antunez Noguera
+**Autores:** María Fassler Neumann · Sebastian Antunez Noguera — Grupo 4
+**Profesor:** Jean Paul Maidana
 
 ## Entrega
 
@@ -14,7 +15,7 @@ presupuesto limitado de retención.
 
 | Entregable | Archivo |
 |---|---|
-| Informe técnico (6 páginas) | `informe/Sumativa1_Informe_Sebastian_Antunez.pdf` |
+| Informe técnico | `informe/Sumativa1_Informe_Maria_Fassler_Sebastian_Antunez.pdf` |
 | Cuaderno de análisis | `notebooks/Sumativa1_Analisis_Desercion.ipynb` |
 | Figuras y tablas generadas | `resultados/` |
 
@@ -95,7 +96,7 @@ analisis-desercion/
 ├── notebooks/
 │   └── Sumativa1_Analisis_Desercion.ipynb   Cuaderno de la Sumativa 1
 ├── informe/
-│   └── Sumativa1_Informe_...pdf/.docx       Informe técnico de avance
+│   └── Sumativa1_Informe_Maria_Fassler_...pdf/.docx   Informe técnico
 ├── resultados/
 │   ├── figuras/             Cuatro figuras del informe
 │   └── tablas/              Diccionario de variables, descriptivos,
