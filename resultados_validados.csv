@@ -1,0 +1,18 @@
+﻿tipo,nombre,estimacion,ic_clasico,ic_bootstrap_bca,veredicto,nota
+parametro,Abandono medio,0.518288,[0.5138; 0.5227],[0.5138; 0.5227],robusto,discrepancia de amplitud 0.4 % frente al clasico
+parametro,Edad media de la matricula,24.160014,[24.0905; 24.2295],[24.0924; 24.2304],robusto,discrepancia de amplitud 0.8 % frente al clasico
+parametro,Proporcion de mujeres,0.515584,[0.5097; 0.5215],[0.5097; 0.5215],robusto,discrepancia de amplitud 0.6 % frente al clasico
+parametro,Programas con abandono > 50 %,0.54939,[0.5395; 0.5593],[0.5396; 0.5591],robusto,discrepancia de amplitud 1.5 % frente al clasico
+correlacion,Acreditacion de la carrera,-0.31091,-,[-0.3290; -0.2927],estable,Robusta
+correlacion,Acreditacion de la institucion,-0.259091,-,[-0.2784; -0.2397],estable,Robusta
+correlacion,Tamanio del programa (log),-0.247207,-,[-0.2669; -0.2275],estable,Robusta
+correlacion,Proporcion de mujeres,-0.164823,-,[-0.1842; -0.1449],estable,Robusta
+correlacion,Egreso de ensenianza municipal,0.050187,-,[0.0305; 0.0703],estable,Debil pero con signo definido
+contraste,Acreditacion institucional (Welch vs permutacion),0.175681,"p = 1,2e-77",p permutacion < 0.0001,robusto,ambos rechazan; el de permutacion no supone normalidad
+simulacion,Ventaja de focalizar por abandono observado,8462.3,-,[6.306; 10.647],robusto,"se mantiene con distribucion Beta; sensible al presupuesto, no a delta"
+observaciones_influyentes,Programas censurados en 0 y en 1,465.0,-,-,sensible,"excluirlos desplaza la media de 0,518 a 0,527; conservar y declarar"
+recomendacion,R1,,-,-,-,"Usar los IC BCa en lugar de los clasicos cuando se reporten parametros en la S3: coinciden, de modo que no hay costo, y no dependen de supuestos."
+recomendacion,R2,,-,-,-,"Modelar con las tres correlaciones estables y fuertes; las dos debiles entran como controles, no como factores interpretables."
+recomendacion,R3,,-,-,-,Agrupar los errores estandar por institucion en el modelo multivariado: los programas de una misma institucion no son independientes.
+recomendacion,R4,,-,-,-,Declarar delta como supuesto de politica en cualquier escenario de intervencion; la conclusion no depende de su valor.
+recomendacion,R5,,-,-,-,"Conservar los 465 programas censurados y declararlos, en lugar de excluirlos: su efecto sobre la media es conocido y acotado."

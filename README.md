@@ -6,7 +6,26 @@ Inteligencia Artificial, Universidad Andrés Bello.
 **Autores:** María Fassler Neumann · Sebastian Antunez Noguera — Grupo 4
 **Profesor:** Jean Paul Maidana
 
-## Entrega
+## Entregas
+
+**Sumativa 2 — Validación por remuestreo y simulación.** Somete los resultados
+de la Sumativa 1 a métodos que no dependen de supuestos distribucionales:
+bootstrap de los intervalos, test de permutación, estabilidad de las
+correlaciones, simulación Monte Carlo de la decisión de focalización y análisis
+de robustez. Todos los procedimientos emplean 10.000 repeticiones.
+
+| Entregable | Archivo |
+|---|---|
+| Informe técnico | `S2/informe/Sumativa2_Informe_Maria_Fassler_Sebastian_Antunez.pdf` |
+| Cuaderno de validación | `S2/Sumativa2_Validacion_Remuestreo.ipynb` |
+| Resultados validados para la S3 | `resultados_validados.csv` |
+
+Hallazgo central: los intervalos bootstrap reproducen los clásicos con una
+discrepancia inferior al 1 %, de modo que los supuestos de la fase anterior se
+sostienen. Y la simulación cuantifica lo que la Sumativa 1 solo había
+enunciado: focalizar por el abandono medido alcanza a un **38,9 % más de
+estudiantes** que focalizar por acreditación, ventaja que persiste en los
+dieciséis escenarios examinados.
 
 **Sumativa 1 — Informe técnico de avance.** Aplica estadística descriptiva,
 estimación por intervalos y contraste de hipótesis sobre 9.678 programas de
@@ -15,9 +34,9 @@ presupuesto limitado de retención.
 
 | Entregable | Archivo |
 |---|---|
-| Informe técnico | `informe/Sumativa1_Informe_Maria_Fassler_Sebastian_Antunez.pdf` |
-| Cuaderno de análisis | `notebooks/Sumativa1_Analisis_Desercion.ipynb` |
-| Figuras y tablas generadas | `resultados/` |
+| Informe técnico | `S1/informe/Sumativa1_Informe_Maria_Fassler_Sebastian_Antunez.pdf` |
+| Cuaderno de análisis | `S1/Sumativa1_Analisis_Desercion.ipynb` |
+| Figuras y tablas generadas | `S1/resultados/` |
 
 Hallazgo central: los tres contrastes rechazan la hipótesis nula con valores p
 entre 10⁻²⁰ y 10⁻⁷⁸, pero sus tamaños del efecto van de grande (d = 0,80 para
@@ -90,18 +109,19 @@ jupyter lab
 ```
 analisis-desercion/
 ├── datos/
-│   ├── base_programas.csv   Conjunto analítico, una fila por programa
+│   ├── base_programas.csv        Conjunto analítico, una fila por programa
 │   ├── diagnostico_extremos.csv  Auditoría de los valores 0 y 1
-│   └── origen/              Scripts y documentación de cómo se construyó
-├── notebooks/
-│   └── Sumativa1_Analisis_Desercion.ipynb   Cuaderno de la Sumativa 1
-├── informe/
-│   └── Sumativa1_Informe_Maria_Fassler_...pdf/.docx   Informe técnico
-├── resultados/
-│   ├── figuras/             Cuatro figuras del informe
-│   └── tablas/              Diccionario de variables, descriptivos,
-│                            estimaciones y contrastes
-├── requirements.txt         Dependencias con versiones fijadas
+│   └── origen/                   Scripts y documentación de su construcción
+├── S1/
+│   ├── Sumativa1_Analisis_Desercion.ipynb
+│   ├── informe/                  Informe de la Sumativa 1 y el logo
+│   └── resultados/figuras, tablas
+├── S2/
+│   ├── Sumativa2_Validacion_Remuestreo.ipynb
+│   ├── informe/                  Informe de la Sumativa 2
+│   └── resultados/figuras, tablas
+├── resultados_validados.csv      Entrada directa a la Sumativa 3
+├── requirements.txt              Dependencias con versiones fijadas
 └── README.md
 ```
 
