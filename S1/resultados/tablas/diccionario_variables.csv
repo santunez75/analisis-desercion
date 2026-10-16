@@ -4,7 +4,7 @@ pct_municipal,Cuantitativa continua,Proporcion proveniente de ensenanza municipa
 pct_pagado,Cuantitativa continua,Proporcion proveniente de particular pagado,8592
 pct_tp,Cuantitativa continua,Proporcion proveniente de ensenanza tecnico-profesional,9665
 pct_mujeres,Cuantitativa continua,Proporcion de mujeres en la matricula,9418
-edad_promedio,Cuantitativa continua,"Edad media de la matricula, en anios",9641
+edad_promedio,Cuantitativa continua,"Edad media de los estudiantes matriculados, en anios",9641
 inst_acreditada,Cuantitativa continua,Fraccion de la matricula en institucion acreditada,1195
 carrera_acreditada,Cuantitativa continua,Fraccion de la matricula en carrera acreditada,4720
 matricula_total,Cuantitativa continua,Matricula media del programa,9641

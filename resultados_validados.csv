@@ -1,6 +1,6 @@
 ﻿tipo,nombre,estimacion,ic_clasico,ic_bootstrap_bca,veredicto,nota
 parametro,Abandono medio,0.518288,[0.5138; 0.5227],[0.5138; 0.5227],robusto,discrepancia de amplitud 0.4 % frente al clasico
-parametro,Edad media de la matricula,24.160014,[24.0905; 24.2295],[24.0924; 24.2304],robusto,discrepancia de amplitud 0.8 % frente al clasico
+parametro,Edad media de los estudiantes,24.160014,[24.0905; 24.2295],[24.0924; 24.2304],robusto,discrepancia de amplitud 0.8 % frente al clasico
 parametro,Proporcion de mujeres,0.515584,[0.5097; 0.5215],[0.5097; 0.5215],robusto,discrepancia de amplitud 0.6 % frente al clasico
 parametro,Programas con abandono > 50 %,0.54939,[0.5395; 0.5593],[0.5396; 0.5591],robusto,discrepancia de amplitud 1.5 % frente al clasico
 correlacion,Acreditacion de la carrera,-0.31091,-,[-0.3290; -0.2927],estable,Robusta
