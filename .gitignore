@@ -29,3 +29,8 @@ desktop.ini
 # --- Documentos temporales -------------------------------------------------
 ~$*.docx
 ~$*.xlsx
+
+# --- Evaluaciones formativas -----------------------------------------------
+# Las formativas no se entregan por el repositorio; quedan solo en local.
+F1/
+F2/
