@@ -11,8 +11,10 @@ Inteligencia Artificial, Universidad Andrés Bello.
 **Sumativa 3 — Modelamiento predictivo integrado.** Cierra la cadena: cada
 decisión metodológica de esta fase proviene de un resultado documentado en las
 anteriores. Cubre el tratamiento de datos faltantes, la clasificación por
-regresión logística con tres criterios de selección de variables, la evaluación
-de estabilidad por bootstrap y el análisis del impacto de la imputación.
+regresión logística con tres criterios de selección de variables —dominio,
+stepwise por AIC y reducida—, la evaluación de estabilidad por bootstrap y el
+análisis del impacto de la imputación. La partición es 70/30 estratificada con
+semilla fija.
 
 | Entregable | Archivo |
 |---|---|
@@ -28,13 +30,19 @@ permite medir el error contra los valores verdaderos: la imputación por
 regresión conserva el 100 % de la muestra frente al 47,5 % que deja la
 eliminación, y preserva mejor las correlaciones de la Sumativa 1.
 
-Hallazgo central: al remuestrear **por institución y no por programa**, como la
-Sumativa 2 advirtió que correspondía, los intervalos de los coeficientes se
-ensanchan entre **1,97 y 3,81 veces** respecto de los clásicos. El ajuste
-convencional sobreestimaba su propia precisión por un factor de hasta cuatro, y
-nueve de los veinte términos del modelo pierden la determinación de su signo.
-Las cuatro variables continuas conservan el suyo, y son las mismas que la
-Sumativa 2 había validado como estables.
+Hallazgo central: **dos bootstraps que responden preguntas distintas**. El
+estándar, que remuestrea observaciones, reproduce los intervalos clásicos con
+una razón de amplitudes de **1,00 a 1,12**, de modo que la precisión declarada
+es correcta bajo muestreo independiente. El que remuestrea **instituciones**,
+como la Sumativa 2 advirtió que correspondía, los ensancha **entre 1,62 y 3,01
+veces**, y siete de los veinte coeficientes pierden la determinación de su
+signo. Los programas de una misma institución no son independientes, y esa es
+la fuente de incertidumbre que el ajuste clásico no ve.
+
+Frente a la línea base —el clasificador trivial que predice siempre la clase
+mayoritaria, con exactitud 0,549 y F1 0,709— el modelo final suma **12,9 puntos
+de exactitud** y eleva el AUC de 0,500 a **0,730**, aunque su F1 mejora solo en
+0,011: la ganancia está en la discriminación, no en la sensibilidad.
 
 **Sumativa 2 — Validación por remuestreo y simulación.** Somete los resultados
 de la Sumativa 1 a métodos que no dependen de supuestos distribucionales:

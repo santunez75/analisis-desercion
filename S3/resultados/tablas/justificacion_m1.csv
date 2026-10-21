@@ -1,0 +1,8 @@
+﻿Variable,Cifra de S1,IC bootstrap de S2,Veredicto de S2
+carrera_acreditada,r = -0.311,[-0.329; -0.293],Robusta
+inst_acreditada,r = -0.259,[-0.278; -0.240],Robusta
+log_matricula,r = -0.247,[-0.267; -0.227],Robusta
+pct_mujeres,r = -0.165,[-0.184; -0.145],Robusta
+clasificacion_institucion_nivel_3,"chi2 = 102,5 (p < 0,001)","V de Cramer = 0,103",Asociacion debil pero significativa
+area_del_conocimiento,"F = 44,30 (p < 0,001)","eta2 = 0,040",Efecto pequenio pero sistematico
+jornada,"0,547 vespertina vs 0,501 diurna","+4,6 puntos",Diferencia descriptiva relevante
