@@ -8,6 +8,34 @@ Inteligencia Artificial, Universidad Andrés Bello.
 
 ## Entregas
 
+**Sumativa 3 — Modelamiento predictivo integrado.** Cierra la cadena: cada
+decisión metodológica de esta fase proviene de un resultado documentado en las
+anteriores. Cubre el tratamiento de datos faltantes, la clasificación por
+regresión logística con tres criterios de selección de variables, la evaluación
+de estabilidad por bootstrap y el análisis del impacto de la imputación.
+
+| Entregable | Archivo |
+|---|---|
+| Informe técnico | `S3/informe/Sumativa3_Informe_Maria_Fassler_Sebastian_Antunez.docx` |
+| Cuaderno maestro | `S3/Sumativa3_Proyecto_Integrado.ipynb` |
+| Presentación con guion cronometrado | `S3/presentacion/Sumativa3_Presentacion_Grupo4.pptx` |
+| Figuras y tablas generadas | `S3/resultados/` |
+
+El conjunto no tiene datos faltantes ni los tuvo, porque cada fila es un
+agregado por programa. En lugar de inventar el problema, se monta un
+experimento controlado de ausencia bajo los tres mecanismos de Rubin, que
+permite medir el error contra los valores verdaderos: la imputación por
+regresión conserva el 100 % de la muestra frente al 47,5 % que deja la
+eliminación, y preserva mejor las correlaciones de la Sumativa 1.
+
+Hallazgo central: al remuestrear **por institución y no por programa**, como la
+Sumativa 2 advirtió que correspondía, los intervalos de los coeficientes se
+ensanchan entre **1,97 y 3,81 veces** respecto de los clásicos. El ajuste
+convencional sobreestimaba su propia precisión por un factor de hasta cuatro, y
+nueve de los veinte términos del modelo pierden la determinación de su signo.
+Las cuatro variables continuas conservan el suyo, y son las mismas que la
+Sumativa 2 había validado como estables.
+
 **Sumativa 2 — Validación por remuestreo y simulación.** Somete los resultados
 de la Sumativa 1 a métodos que no dependen de supuestos distribucionales:
 bootstrap de los intervalos, test de permutación, estabilidad de las
@@ -120,7 +148,12 @@ analisis-desercion/
 │   ├── Sumativa2_Validacion_Remuestreo.ipynb
 │   ├── informe/                  Informe de la Sumativa 2
 │   └── resultados/figuras, tablas
-├── resultados_validados.csv      Entrada directa a la Sumativa 3
+├── S3/
+│   ├── Sumativa3_Proyecto_Integrado.ipynb
+│   ├── informe/                  Informe de la Sumativa 3
+│   ├── presentacion/             Diapositivas con el guion en las notas
+│   └── resultados/figuras, tablas
+├── resultados_validados.csv      Entrada de la Sumativa 2 a la Sumativa 3
 ├── requirements.txt              Dependencias con versiones fijadas
 └── README.md
 ```
