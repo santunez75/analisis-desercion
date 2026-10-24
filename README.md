@@ -41,8 +41,14 @@ la fuente de incertidumbre que el ajuste clásico no ve.
 
 Frente a la línea base —el clasificador trivial que predice siempre la clase
 mayoritaria, con exactitud 0,549 y F1 0,709— el modelo final suma **12,9 puntos
-de exactitud** y eleva el AUC de 0,500 a **0,730**, aunque su F1 mejora solo en
-0,011: la ganancia está en la discriminación, no en la sensibilidad.
+de exactitud** y eleva el AUC de 0,500 a **0,730**.
+
+Un segundo resultado contraintuitivo: **la ponderación de clase baja la
+sensibilidad** de 0,754 a 0,674, en lugar de subirla. La ponderación equilibrada
+rebaja el peso de la clase mayoritaria, y aquí la clase positiva —abandono
+alto— **es** la mayoritaria, con un 54,9 %. La palanca que sí sube el recall es
+el umbral: bajarlo a 0,418 lleva la sensibilidad a **0,850** y da el mejor F1 de
+todas las configuraciones (0,740).
 
 **Sumativa 2 — Validación por remuestreo y simulación.** Somete los resultados
 de la Sumativa 1 a métodos que no dependen de supuestos distribucionales:
